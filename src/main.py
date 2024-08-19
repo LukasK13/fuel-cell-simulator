@@ -3,8 +3,8 @@ import streamlit as st
 import onnxruntime
 import plotly.express as px
 
-from src.helpers.dewpoint_calculator import calculate_dewpoint
-from src.helpers.operation_strategy import calculate_operating_conditions
+from helpers.dewpoint_calculator import calculate_dewpoint
+from helpers.operation_strategy import calculate_operating_conditions
 
 st.set_page_config(layout="wide")
 st.title('Fuel Cell Simulator')

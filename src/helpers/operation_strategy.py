@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from src.helpers.dewpoint_calculator import calculate_dewpoint
+from helpers.dewpoint_calculator import calculate_dewpoint
 
 
 MOLAR_MASS_O2 = 31.9988
