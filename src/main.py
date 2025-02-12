@@ -14,8 +14,11 @@ calc_tab, dewpoint_tab = st.tabs(['⚡ Fuel Cell Simulator', '💦 Dew Point Cal
 with calc_tab:
     with st.expander("❓ Help"):
         st.markdown("""
-        This page allows to predict the cell voltage of a fuel cell based on the operating conditions.
-        The model is based on an ONNX model trained on simulated fuel cell data. You can find more information about the model in the [Reference Paper](link).
+        This fuel cell simulator allows to predict the cell voltage of a fuel cell based on the operating conditions. It aims to provide a quick estimation of the cell voltage based on the operating conditions for a state of the art fuel cell. Thus, it is intended to help the development of fuel cell systems and system components.
+        
+        The cell voltage is predicted by a machine leanring based fuel cell digital twin. The model was trained on a large dataset of simulated fuel cell data and exported as an ONNX model. You can find more information about the model and its validation in our peer reviewed article "Klass et al., *The Voltage Oracle: A Foundation Model for Probabilistic PEM Fuel Cell Voltage Prediction*, J. Electrochem. Soc. 2025,  [10.1149/1945-7111/adad43](https://iopscience.iop.org/article/10.1149/1945-7111/adad43)".
+        
+        The source of the model for further use is available on [GitHub](https://github.com/LukasK13/fuel-cell-simulator).
         
         #### How to use the simulator:
         To run the simulation, the operating conditions of the fuel cell need to be provided.
@@ -44,6 +47,7 @@ with calc_tab:
         The confidence interval represents the model's prediction of the 1st sigma interval. Thereby the model output can be treated a gaussian distribution of the cell voltage.
         The results are displayed in a table and a scatter plot. The scatter plot shows the predicted cell voltage with the confidence interval.
         
+        :copyright: Lukas Klass, Center for Solar Energy and Hydrogen Research Baden-Württemberg ([ZSW](https://www.zsw-bw.de/en.html)) 2025
         """)
 
     st.header('1. Input Parameters 🎚️')
@@ -186,7 +190,7 @@ with calc_tab:
 with dewpoint_tab:
     with st.expander("❓ Help"):
         st.markdown("""
-        This page allows to compute the dewpoint of a gas based on the relative humidity. The calculations are based on https://www.wetterochs.de/wetter/feuchte.html.
+        This page allows to compute the dewpoint of a gas based on the relative humidity. The calculations are based on "O. Alduchov and R. Eskridge, *Improved Magnus Form Approximation of Saturation Vapor Pressure*, J. Appl. Meteorol. 1996, [10.1175/1520-0450(1996)035<0601\\:IMFAOS>2.0.CO;2](https://doi.org/10.1175/1520-0450(1996)035<0601:IMFAOS>2.0.CO;2)".
         1. Enter the gas temperature  in °C.
         3. Enter the relative humidity in %.
         """)
