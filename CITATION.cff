@@ -1,0 +1,78 @@
+cff-version: 1.2.0
+title: >-
+  The Voltage Oracle: A Foundation Model for Probabilistic
+  PEM Fuel Cell Voltage Prediction
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lukas
+    family-names: Klass
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+    orcid: 'https://orcid.org/0000-0002-1379-3607'
+  - given-names: Laurin
+    family-names: Holz
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+  - given-names: Lukas
+    family-names: König
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+    orcid: 'https://orcid.org/0009-0008-5585-4587'
+  - given-names: Alexander
+    family-names: Kabza
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+  - given-names: Frank
+    family-names: Sehnke
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+    orcid: 'https://orcid.org/0000-0002-5742-1805'
+  - given-names: Katharina
+    family-names: Strecker
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+  - given-names: Markus
+    affiliation: >-
+      Center for Solar Energy and Hydrogen Research
+      Baden-Württemberg
+    family-names: Hölzle
+    orcid: 'https://orcid.org/0009-0004-8278-1089'
+identifiers:
+  - type: doi
+    value: 10.1149/1945-7111/adad43/pdf
+    description: Peer Reviewed Reference Article
+repository-code: 'https://github.com/LukasK13/fuel-cell-simulator'
+abstract: >-
+  Long-term operation of proton exchange membrane (PEM) fuel
+  cells requires precise monitoring to detect and prevent
+  harmful anomalies. Cell voltage is a sensitive indicator
+  for the fuel cell’s state of health. However, its
+  dependency on fuel cell operating conditions impedes the
+  detection of anomalies. To overcome this limitation, we
+  present a machine learning driven foundation model for
+  probabilistic fuel cell voltage prediction. The foundation
+  model can be fitted to new fuel cell designs using
+  transfer learning for anomaly detection. Since the
+  availability and variance in real fuel cell test data sets
+  is very limited, a physics-based fuel cell simulation
+  model is used to generate 30,000 data points to train the
+  machine learning model. To improve the prediction accuracy
+  of the foundation model, additional steps such as feature
+  engineering and target balancing are introduced and their
+  individual effects are analyzed. The performance of the
+  pre-trained foundation model is then tested by transfer
+  learning the foundation model using real measurement data
+  from two different automotive fuel cell designs. It is
+  shown that with sufficient training data, the machine
+  learning model outperforms the physics-based simulation
+  model by an RMSE improvement of up to 37% and respectively
+  by 61% on the two test data sets.
